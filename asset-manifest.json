@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/recordKeeping/static/css/main.0aa0a98d.css",
+    "main.js": "/recordKeeping/static/js/main.47a572c8.js",
+    "static/js/787.ca862e04.chunk.js": "/recordKeeping/static/js/787.ca862e04.chunk.js",
+    "index.html": "/recordKeeping/index.html",
+    "main.0aa0a98d.css.map": "/recordKeeping/static/css/main.0aa0a98d.css.map",
+    "main.47a572c8.js.map": "/recordKeeping/static/js/main.47a572c8.js.map",
+    "787.ca862e04.chunk.js.map": "/recordKeeping/static/js/787.ca862e04.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0aa0a98d.css",
+    "static/js/main.47a572c8.js"
+  ]
+}
