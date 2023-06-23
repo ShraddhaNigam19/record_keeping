@@ -21,10 +21,11 @@ function App() {
     arr.splice(index, 1);
     setData([...arr]);
   }
+
   return (
     <div className="App">
       <Header />
-      <div className="form">
+      <div className="form p-4">
         <Stack spacing={2} direction="row">
           <TextField
             value={name}
@@ -40,15 +41,23 @@ function App() {
             label="email"
             variant="outlined"
           />
-          <Button color="success" variant="contained" onClick={addData}>
-            <AddIcon />
+          <Button
+            color="success"
+            variant="contained"
+            onClick={addData}
+            className="flex items-center"
+          >
+            <AddIcon className="center" />
           </Button>
         </Stack>
       </div>
-      <div className="data">
+      <div className="data mt-4">
         {data.map((element, index) => {
           return (
-            <div key={index} className="data_val">
+            <div
+              key={index}
+              className="data_val p-3 bg-white rounded-lg shadow-md flex justify-between items-center mb-3"
+            >
               <h4>{element.name}</h4>
               <h4>{element.email}</h4>
               <Stack>
@@ -56,8 +65,9 @@ function App() {
                   variant="contained"
                   color="error"
                   onClick={() => removeData(index)}
+                  className="flex items-center mt-2"
                 >
-                  <DeleteIcon />
+                  <DeleteIcon className="center" />
                 </Button>
               </Stack>
             </div>
